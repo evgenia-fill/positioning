@@ -31,8 +31,9 @@ document.addEventListener('keydown', function (event) {
 
 
 function startProgress() {
-    const redBar = document.querySelector('.progress-red');
-    const text = document.querySelector('.progress-text');
+    const redBar = document.querySelector('.progres-red');
+    const textBlack = document.querySelector('.progress-text-black');
+    const textWhite = document.querySelector('.progress-text-white');
 
     let progress = 0;
     const duration = 3000;
@@ -40,11 +41,11 @@ function startProgress() {
     const step = 100 / (duration / frameRate);
 
     redBar.style.width = '0%';
-    text.innerText = '0%';
+    textBlack.innerText = '0%';
+    textWhite.innerText = '0%';
 
     const interval = setInterval(() => {
         progress += step;
-
         if (progress >= 100) {
             progress = 100;
             clearInterval(interval);
@@ -52,6 +53,7 @@ function startProgress() {
 
         const currentPercent = Math.round(progress) + '%';
         redBar.style.width = currentPercent;
-        text.innerText = currentPercent;
+        textBlack.innerText = currentPercent;
+        textWhite.innerText = currentPercent;
     }, frameRate);
 }

@@ -150,15 +150,24 @@ body {
     top: 0;
     font-size: 18px;
     z-index: 1;
-    color: white;
 }
 
-.progress-red {
-    width: 50%;
+.progress-text-black {
+    color: #000;
+}
+
+.progress-text-white {
+    color: #fff;
+    width: 600px;
+}
+
+.progres-red {
+    width: 0;
     height: 100%;
     background-color: red;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     overflow: hidden;
 }
