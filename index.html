@@ -7,6 +7,20 @@
 </head>
 <body>
     <!--Верстать тут-->
+    <button onclick="openModal()">Открыть модальное окно</button>
+
+    <div id="modalOverlay" class="overlay">
+        <div class="modal">
+            <span class="close-cross" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <h2>That's all, folks</h2>
+                <p>You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.</p>
+                <p>If you like this you would probably enjoy <a href="#">Meny</a>, <a href="#">reveal.js</a> and <a href="#">stroll.js</a>.</p>
+                <button class="btn-close" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
