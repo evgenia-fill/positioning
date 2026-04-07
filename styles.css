@@ -171,3 +171,36 @@ body {
     z-index: 2;
     overflow: hidden;
 }
+
+
+.accordion {
+    max-width: 500px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-label {
+    display: block;
+    padding: 10px 15px;
+    background-color: #aaaaaa;
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    padding: 0 15px;
+}
+
+.accordion-input:checked + .accordion-label + .accordion-content {
+    max-height: 500px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
