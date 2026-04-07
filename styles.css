@@ -130,3 +130,35 @@ body {
     width: 45px;
     height: 45px;
 }
+
+.progress {
+    margin: 20px auto;
+    width: 600px;
+    height: 40px;
+    background-color: #595757;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    z-index: 1;
+    color: white;
+}
+
+.progress-red {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
